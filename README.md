@@ -2,7 +2,7 @@
 
 
 
-## Pose Estimation을 기반으로 한 작업 현장 관리 자동화 시스템 (물류/ 건설현장에서의 작업량 파악과 위험상황 감지를 중점으로)
+### Pose Estimation을 기반으로 한 작업 현장 관리 자동화 시스템 (물류/ 건설현장에서의 작업량 파악과 위험상황 감지를 중점으로)
 
 ### 
 
@@ -11,6 +11,8 @@
 - [OpenCV](https://opencv.org/)
 
 - [Mediapipe](https://google.github.io/mediapipe/)
+
+- [scikit-learn](https://scikit-learn.org/stable/)
 
 
 
@@ -36,7 +38,7 @@ The landmark model in MediaPipe Pose predicts the location of 33 pose landmarks 
 
 
 
-### To Do:
+## To Do:
 
 - [ ]  작업 행동 분석/정형화하여 판단 모델 만들기
 
