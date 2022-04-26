@@ -2,7 +2,7 @@
 
 
 
-### Pose Estimation을 기반으로 한 작업 현장 관리 자동화 시스템 (물류/ 건설현장에서의 실시간 작업량 파악과 위험상황 감지를 중점으로)
+### 일상생활 속 자세 교정 및 신체 부담도 측정
 
 ### 
 
@@ -47,5 +47,4 @@ The landmark model in MediaPipe Pose predicts the location of 33 pose landmarks 
 - [ ]  데모 시스템 만들어보기
 
 - [ ]  결론 및 보완할 점 파악
-
 
