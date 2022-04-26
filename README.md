@@ -32,7 +32,9 @@ The detector is inspired by our own lightweight [BlazeFace](https://arxiv.org/a
 
 The landmark model in MediaPipe Pose predicts the location of 33 pose landmarks (see figure below).
 
-<img src="https://google.github.io/mediapipe/images/mobile/pose_tracking_full_body_landmarks.png" title="" alt="pose_tracking_full_body_landmarks.png" data-align="center">*Fig 2. 33 pose landmarks.*
+<img src="https://google.github.io/mediapipe/images/mobile/pose_tracking_full_body_landmarks.png" title="" alt="pose_tracking_full_body_landmarks.png" data-align="center">
+<br>
+*Fig 2. 33 pose landmarks.*
 
 ### 
 
