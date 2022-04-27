@@ -2,9 +2,9 @@
 
 
 
-### 일상생활 속 자세 교정 및 신체 부담도 측정
+### **Pose Estimation을 기반으로 한 작업 현장 관리 시스템 (건설현장에서의 실시간 자세 파악 및 신체 부담 측정과 위험상황 감지를 중점으로)**
 
-### 
+
 
 ### Using:
 
@@ -36,7 +36,7 @@ The landmark model in MediaPipe Pose predicts the location of 33 pose landmarks 
 <br>
 *Fig 2. 33 pose landmarks.*
 
-### 
+
 
 
 
