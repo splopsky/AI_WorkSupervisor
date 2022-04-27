@@ -1,12 +1,7 @@
 # AI_Work Supervisor
 
-
-
 ### **Pose Estimation을 기반으로 한 작업 현장 관리 시스템 (건설현장에서의 실시간 자세 파악 및 신체 부담 측정과 위험상황 감지를 중점으로)**
-<<<<<<< HEAD
 
-=======
->>>>>>> 5271c11d46d0830d417d2a24479337771ebfeb00
 
 
 ### Using:
@@ -16,8 +11,6 @@
 - [Mediapipe](https://google.github.io/mediapipe/)
 
 - [scikit-learn](https://scikit-learn.org/stable/)
-
-
 
 ## *MediaPipe Pose*
 
@@ -39,17 +32,12 @@ The landmark model in MediaPipe Pose predicts the location of 33 pose landmarks 
 <br>
 *Fig 2. 33 pose landmarks.*
 
-
-
-
-
 ## To Do:
 
-- [ ]  작업 행동 분석/정형화하여 판단 모델 만들기
+- [ ] 작업 행동 분석/정형화하여 판단 모델 만들기
 
-- [ ]  실험 및 성능평가
+- [ ] 실험 및 성능평가
 
-- [ ]  데모 시스템 만들어보기
+- [ ] 데모 시스템 만들어보기
 
-- [ ]  결론 및 보완할 점 파악
-
+- [ ] 결론 및 보완할 점 파악
