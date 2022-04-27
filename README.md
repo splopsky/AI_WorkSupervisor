@@ -2,8 +2,6 @@
 
 ### **Pose Estimation을 기반으로 한 작업 현장 관리 시스템 (건설현장에서의 실시간 자세 파악 및 신체 부담 측정과 위험상황 감지를 중점으로)**
 
-
-
 ### Using:
 
 - [OpenCV](https://opencv.org/)
@@ -30,7 +28,7 @@ The landmark model in MediaPipe Pose predicts the location of 33 pose landmarks 
 
 <img src="https://google.github.io/mediapipe/images/mobile/pose_tracking_full_body_landmarks.png" title="" alt="pose_tracking_full_body_landmarks.png" data-align="center">
 <br>
-*Fig 2. 33 pose landmarks.*
+Fig 2. 33 pose landmarks.
 
 ## To Do:
 
