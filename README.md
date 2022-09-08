@@ -27,7 +27,7 @@
 - CNN기반의 학습모델을 활용한 거북목 증후군 자세 교정 시스템 [[링크]](http://koreascience.or.kr/article/JAKO202022560454953.page)
 - 감시 영상을 활용한 OpenPose 기반 아동 학대 판단시스템 [[링크]](https://scienceon.kisti.re.kr/srch/selectPORSrchArticle.do?cn=JAKO201913649329503&dbt=NART)
 - 인간 행동 분석을 이용한 위험 상황 인식 시스템 구현 [[링크]](http://koreascience.or.kr/article/JAKO202111841186714.page)
-- 안전보건공단 - [[링크]](https://kosha.or.kr/kosha/data/guidanceC.do)
+- 안전보건공단 [[링크]](https://kosha.or.kr/kosha/data/guidanceC.do)
 
 *MediaPipe* 활용 관련:
 
