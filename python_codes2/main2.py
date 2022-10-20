@@ -310,7 +310,7 @@ with mp_holistic.Holistic(min_detection_confidence=0.5, min_tracking_confidence=
                                  )      
             #legs
             if (legs_display == '4' or legs_display == '5' or legs_display == '6'):
-                if left_leg_angle < 150 and left_leg_angle >= 120:
+                if left_leg_angle < 170 and left_leg_angle >= 120:
                     mp_drawing.draw_landmarks(image, results.pose_landmarks, Lleg_set , 
                                  mp_drawing.DrawingSpec(color=(245,66,230), thickness=2, circle_radius=4),
                                  mp_drawing.DrawingSpec(color=(0,255,255), thickness=2, circle_radius=2)
@@ -320,7 +320,7 @@ with mp_holistic.Holistic(min_detection_confidence=0.5, min_tracking_confidence=
                                  mp_drawing.DrawingSpec(color=(245,66,230), thickness=2, circle_radius=4),
                                  mp_drawing.DrawingSpec(color=(0,0,255), thickness=2, circle_radius=2)
                                  )  
-                if right_leg_angle < 150 and right_leg_angle >= 120:
+                if right_leg_angle < 170 and right_leg_angle >= 120:
                     mp_drawing.draw_landmarks(image, results.pose_landmarks, Rleg_set , 
                                  mp_drawing.DrawingSpec(color=(245,66,230), thickness=2, circle_radius=4),
                                  mp_drawing.DrawingSpec(color=(0,255,255), thickness=2, circle_radius=2)
