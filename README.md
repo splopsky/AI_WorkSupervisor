@@ -28,8 +28,3 @@
 - 감시 영상을 활용한 OpenPose 기반 아동 학대 판단시스템 [[링크]](https://scienceon.kisti.re.kr/srch/selectPORSrchArticle.do?cn=JAKO201913649329503&dbt=NART)
 - 인간 행동 분석을 이용한 위험 상황 인식 시스템 구현 [[링크]](http://koreascience.or.kr/article/JAKO202111841186714.page)
 - 안전보건공단 [[링크]](https://kosha.or.kr/kosha/data/guidanceC.do)
-
-*MediaPipe* 활용 관련:
-
-- [Body Language Detector 만들기](https://www.youtube.com/watch?v=We1uB79Ci-w&list=PLY-IV1aw5rP5kLQogj-2MmOeHL5tP0-yf&index=6)
-- [신체 관절 간 각도 계산하기](https://www.youtube.com/watch?v=06TE_U21FK4)
