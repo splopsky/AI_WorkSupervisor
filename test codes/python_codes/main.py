@@ -5,36 +5,19 @@ import mediapipe as mp # Import mediapipe
 import cv2 # Import opencv
 from sklearn.metrics import accuracy_score
 from collections import deque
+from utils import calculate_angle, beepsound
 import winsound as sd
 import time
 
 mp_drawing = mp.solutions.drawing_utils # Drawing helpers
 mp_holistic = mp.solutions.holistic # Mediapipe Solutions
 
+
+## open trained model
 with open('basic_pose.pkl', 'rb') as f:
     model = pickle.load(f)
     
     
-def calculate_angle(a,b,c):
-    a = np.array(a) # First
-    b = np.array(b) # Mid
-    c = np.array(c) # End
-    
-    radians = np.arctan2(c[1]-b[1], c[0]-b[0]) - np.arctan2(a[1]-b[1], a[0]-b[0])
-    angle = np.abs(radians*180.0/np.pi)
-    
-    if angle >180.0:
-        angle = 360-angle
-        
-    return angle 
-
-def beepsound():
-    fr = 1000    # range : 37 ~ 32767
-    du = 2000     # 1000 ms ==1second
-    sd.Beep(fr, du) # winsound.Beep(frequency, duration)
-    
-    
-cap = cv2.VideoCapture(0)
 pose_container = deque(maxlen=2)
 
 # stage1 = deque(['stand', 'bend_foward'])
@@ -63,6 +46,9 @@ total = 0
 start = time.time()
 
 stages = [False, False, False]
+
+
+cap = cv2.VideoCapture(0)
 
 # Initiate holistic model
 with mp_holistic.Holistic(min_detection_confidence=0.5, min_tracking_confidence=0.5) as holistic:
@@ -104,14 +90,19 @@ with mp_holistic.Holistic(min_detection_confidence=0.5, min_tracking_confidence=
             body_language_class = model.predict(X)[0]
             body_language_prob = model.predict_proba(X)[0]
             
+            # Print the predicted pose
             #print(body_language_class, body_language_prob)
             
-            #test code for pose detection
+            #############################
+            # Code for Action Detection
+            #############################
             
             pose_container.append(body_language_class)
+            
+            # Print pose container for action detection
             # print(pose_container)
             
-            ##물체 옮기는 작업
+            ## 물체 옮기는 작업
             if pose_container == stage1:
                 print('stage1 detected')
                 stage1_count += 1
@@ -141,7 +132,7 @@ with mp_holistic.Holistic(min_detection_confidence=0.5, min_tracking_confidence=
                     stage2_count = 0
                     
                     
-            ##자세 비중 구하기
+            ## 자세 비중 구하기
             if body_language_class == 'raise_hands':
                 score['raise_hands'] += 1
             if body_language_class == 'bending':
@@ -238,7 +229,7 @@ with mp_holistic.Holistic(min_detection_confidence=0.5, min_tracking_confidence=
             pass
         
         
-        cv2.imshow('Raw Webcam Feed', cv2.flip(image, 1))
+        #cv2.imshow('Raw Webcam Feed', cv2.flip(image, -1))
         cv2.imshow('Raw Webcam Feed', image)
         
         if cv2.waitKey(10) & 0xFF == ord('q'):
